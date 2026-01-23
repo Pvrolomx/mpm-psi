@@ -74,9 +74,7 @@ export default function Agendar() {
         </div>
       </div>
 
-      <footer className="py-8 text-center text-sage-400 text-sm">
-        <p>hecho con ❤️ por Duendes 2026</p>
-      </footer>
+      {process.env.NEXT_PUBLIC_SHOW_FIRMA !== "false" && <footer className="py-8 text-center text-sage-400 text-sm"><p>hecho con ❤️ por Duendes 2026</p></footer>}
     </main>
   )
 }
