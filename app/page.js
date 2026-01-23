@@ -161,7 +161,7 @@ export default function Home() {
             {/* Foto de perfil - placeholder hasta que se suba imagen */}
             <div className="relative">
               <img 
-                src="/foto-psicologa.jpg" 
+                src="/foto-psicologa.png" 
                 alt="Psicóloga"
                 className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-xl"
                 onError={(e) => {
