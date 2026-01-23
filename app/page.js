@@ -118,32 +118,35 @@ export default function Home() {
           </p>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-cream-50 rounded-2xl p-8 hover:shadow-xl transition">
-              <div className="w-14 h-14 bg-sage-100 rounded-xl flex items-center justify-center mb-6">
+            <Link href="/agendar" className="bg-cream-50 rounded-2xl p-8 hover:shadow-xl transition cursor-pointer block group">
+              <div className="w-14 h-14 bg-sage-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-sage-200 transition">
                 <span className="text-2xl">👤</span>
               </div>
               <h3 className="text-xl font-semibold text-sage-800 mb-3">Terapia Individual</h3>
               <p className="text-gray-600 mb-4">Sesiones personalizadas de 50 minutos para trabajar ansiedad, depresión, autoestima y más.</p>
               <p className="text-sage-600 font-semibold">$800 MXN / sesión</p>
-            </div>
+              <p className="text-sage-500 text-sm mt-3 group-hover:underline">Agendar cita →</p>
+            </Link>
 
-            <div className="bg-cream-50 rounded-2xl p-8 hover:shadow-xl transition">
-              <div className="w-14 h-14 bg-sage-100 rounded-xl flex items-center justify-center mb-6">
+            <Link href="/agendar" className="bg-cream-50 rounded-2xl p-8 hover:shadow-xl transition cursor-pointer block group">
+              <div className="w-14 h-14 bg-sage-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-sage-200 transition">
                 <span className="text-2xl">💑</span>
               </div>
               <h3 className="text-xl font-semibold text-sage-800 mb-3">Terapia de Pareja</h3>
               <p className="text-gray-600 mb-4">Espacio seguro para mejorar la comunicación y resolver conflictos en pareja.</p>
               <p className="text-sage-600 font-semibold">$1,200 MXN / sesión</p>
-            </div>
+              <p className="text-sage-500 text-sm mt-3 group-hover:underline">Agendar cita →</p>
+            </Link>
 
-            <div className="bg-cream-50 rounded-2xl p-8 hover:shadow-xl transition">
-              <div className="w-14 h-14 bg-sage-100 rounded-xl flex items-center justify-center mb-6">
+            <Link href="/tienda" className="bg-cream-50 rounded-2xl p-8 hover:shadow-xl transition cursor-pointer block group">
+              <div className="w-14 h-14 bg-sage-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-sage-200 transition">
                 <span className="text-2xl">👥</span>
               </div>
               <h3 className="text-xl font-semibold text-sage-800 mb-3">Talleres Grupales</h3>
               <p className="text-gray-600 mb-4">Talleres temáticos sobre manejo de emociones, estrés y desarrollo personal.</p>
-              <Link href="/tienda" className="text-sage-600 font-semibold hover:underline">Ver próximos talleres →</Link>
-            </div>
+              <p className="text-sage-600 font-semibold">Desde $1,500 MXN</p>
+              <p className="text-sage-500 text-sm mt-3 group-hover:underline">Ver próximos talleres →</p>
+            </Link>
           </div>
 
           <div className="text-center mt-12">
