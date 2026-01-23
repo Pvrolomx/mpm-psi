@@ -7,6 +7,12 @@ export default function Home() {
   const [showInstall, setShowInstall] = useState(false)
 
   useEffect(() => {
+    // Registrar Service Worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+    }
+    
+    // PWA Install prompt
     const handler = (e) => {
       e.preventDefault()
       setDeferredPrompt(e)
