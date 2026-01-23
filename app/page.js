@@ -222,31 +222,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-4 bg-sage-800 text-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <h3 className="font-semibold mb-4">🌿 Psicóloga</h3>
-              <p className="text-sage-200 text-sm">Consulta psicológica profesional para tu bienestar emocional.</p>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-4">Contacto</h3>
-              <p className="text-sage-200 text-sm">📧 contacto@psicologa.com</p>
-              <p className="text-sage-200 text-sm">📱 +52 33 1234 5678</p>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-4">Redes</h3>
-              <div className="flex gap-4">
-                <a href="#" className="text-sage-200 hover:text-white transition">Instagram</a>
-                <a href="#" className="text-sage-200 hover:text-white transition">Facebook</a>
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-sage-700 pt-8 text-center">
-            <p className="text-sage-300 text-sm">hecho con ❤️ por Duendes 2026</p>
-          </div>
-        </div>
-      </footer>
+      {process.env.NEXT_PUBLIC_SHOW_FIRMA !== "false" && <footer className="py-8 text-center text-sage-400 text-sm"><p>hecho con ❤️ por Duendes 2026</p></footer>}
     </main>
   )
 }
