@@ -1,23 +1,83 @@
+'use client'
 import Link from 'next/link'
+import { useState, useEffect } from 'react'
 
 export default function Home() {
+  const [deferredPrompt, setDeferredPrompt] = useState(null)
+  const [showInstall, setShowInstall] = useState(false)
+
+  useEffect(() => {
+    const handler = (e) => {
+      e.preventDefault()
+      setDeferredPrompt(e)
+      setShowInstall(true)
+    }
+    window.addEventListener('beforeinstallprompt', handler)
+    return () => window.removeEventListener('beforeinstallprompt', handler)
+  }, [])
+
+  const handleInstall = async () => {
+    if (!deferredPrompt) return
+    deferredPrompt.prompt()
+    const { outcome } = await deferredPrompt.userChoice
+    if (outcome === 'accepted') {
+      setShowInstall(false)
+    }
+    setDeferredPrompt(null)
+  }
+
   return (
     <main className="min-h-screen">
+      {/* Install Banner */}
+      {showInstall && (
+        <div className="fixed bottom-0 left-0 right-0 bg-sage-700 text-white p-4 z-50 shadow-lg">
+          <div className="max-w-6xl mx-auto flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center">
+                <span className="text-2xl">🌿</span>
+              </div>
+              <div>
+                <p className="font-semibold">Psicóloga App</p>
+                <p className="text-sm text-sage-200">Instalar en tu dispositivo</p>
+              </div>
+            </div>
+            <div className="flex gap-2">
+              <button onClick={() => setShowInstall(false)} className="px-4 py-2 text-sage-200 hover:text-white">
+                Ahora no
+              </button>
+              <button onClick={handleInstall} className="bg-white text-sage-700 px-6 py-2 rounded-full font-semibold hover:bg-sage-50">
+                Instalar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-sage-100">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <span className="text-xl font-semibold text-sage-700">🌿 Psicóloga</span>
-          <div className="hidden md:flex gap-6 text-sm">
+          <div className="hidden md:flex gap-6 text-sm items-center">
             <a href="#servicios" className="text-gray-600 hover:text-sage-600 transition">Servicios</a>
             <a href="#sobre-mi" className="text-gray-600 hover:text-sage-600 transition">Sobre mí</a>
             <Link href="/tienda" className="text-gray-600 hover:text-sage-600 transition">Talleres</Link>
+            {showInstall && (
+              <button onClick={handleInstall} className="text-sage-600 hover:text-sage-800 flex items-center gap-1">
+                📲 Descargar App
+              </button>
+            )}
             <Link href="/agendar" className="bg-sage-500 text-white px-4 py-2 rounded-full hover:bg-sage-600 transition">
               Agendar cita
             </Link>
           </div>
-          <Link href="/agendar" className="md:hidden bg-sage-500 text-white px-4 py-2 rounded-full text-sm">
-            Agendar
-          </Link>
+          <div className="flex items-center gap-2 md:hidden">
+            {showInstall && (
+              <button onClick={handleInstall} className="text-sage-600 text-xl">📲</button>
+            )}
+            <Link href="/agendar" className="bg-sage-500 text-white px-4 py-2 rounded-full text-sm">
+              Agendar
+            </Link>
+          </div>
         </div>
       </nav>
 
@@ -58,42 +118,31 @@ export default function Home() {
           </p>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Service 1 */}
             <div className="bg-cream-50 rounded-2xl p-8 hover:shadow-xl transition">
               <div className="w-14 h-14 bg-sage-100 rounded-xl flex items-center justify-center mb-6">
                 <span className="text-2xl">👤</span>
               </div>
               <h3 className="text-xl font-semibold text-sage-800 mb-3">Terapia Individual</h3>
-              <p className="text-gray-600 mb-4">
-                Sesiones personalizadas de 50 minutos para trabajar ansiedad, depresión, autoestima y más.
-              </p>
+              <p className="text-gray-600 mb-4">Sesiones personalizadas de 50 minutos para trabajar ansiedad, depresión, autoestima y más.</p>
               <p className="text-sage-600 font-semibold">$800 MXN / sesión</p>
             </div>
 
-            {/* Service 2 */}
             <div className="bg-cream-50 rounded-2xl p-8 hover:shadow-xl transition">
               <div className="w-14 h-14 bg-sage-100 rounded-xl flex items-center justify-center mb-6">
                 <span className="text-2xl">💑</span>
               </div>
               <h3 className="text-xl font-semibold text-sage-800 mb-3">Terapia de Pareja</h3>
-              <p className="text-gray-600 mb-4">
-                Espacio seguro para mejorar la comunicación y resolver conflictos en pareja.
-              </p>
+              <p className="text-gray-600 mb-4">Espacio seguro para mejorar la comunicación y resolver conflictos en pareja.</p>
               <p className="text-sage-600 font-semibold">$1,200 MXN / sesión</p>
             </div>
 
-            {/* Service 3 */}
             <div className="bg-cream-50 rounded-2xl p-8 hover:shadow-xl transition">
               <div className="w-14 h-14 bg-sage-100 rounded-xl flex items-center justify-center mb-6">
                 <span className="text-2xl">👥</span>
               </div>
               <h3 className="text-xl font-semibold text-sage-800 mb-3">Talleres Grupales</h3>
-              <p className="text-gray-600 mb-4">
-                Talleres temáticos sobre manejo de emociones, estrés y desarrollo personal.
-              </p>
-              <Link href="/tienda" className="text-sage-600 font-semibold hover:underline">
-                Ver próximos talleres →
-              </Link>
+              <p className="text-gray-600 mb-4">Talleres temáticos sobre manejo de emociones, estrés y desarrollo personal.</p>
+              <Link href="/tienda" className="text-sage-600 font-semibold hover:underline">Ver próximos talleres →</Link>
             </div>
           </div>
 
@@ -108,9 +157,21 @@ export default function Home() {
       {/* About */}
       <section id="sobre-mi" className="py-20 px-4 bg-sage-50">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-          <div className="flex-1">
-            <div className="w-64 h-64 bg-gradient-to-br from-sage-300 to-sage-400 rounded-2xl flex items-center justify-center shadow-xl">
-              <span className="text-6xl">👩‍⚕️</span>
+          <div className="flex-1 flex justify-center">
+            {/* Foto de perfil - placeholder hasta que se suba imagen */}
+            <div className="relative">
+              <img 
+                src="/foto-psicologa.jpg" 
+                alt="Psicóloga"
+                className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-xl"
+                onError={(e) => {
+                  e.target.style.display = 'none'
+                  e.target.nextSibling.style.display = 'flex'
+                }}
+              />
+              <div className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-sage-300 to-sage-400 rounded-2xl items-center justify-center shadow-xl hidden">
+                <span className="text-6xl">👩‍⚕️</span>
+              </div>
             </div>
           </div>
           <div className="flex-1">
@@ -124,18 +185,10 @@ export default function Home() {
               según las necesidades de cada persona.
             </p>
             <ul className="space-y-2 text-gray-600">
-              <li className="flex items-center gap-2">
-                <span className="text-sage-500">✓</span> Licenciatura en Psicología - UNAM
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-sage-500">✓</span> Maestría en Psicoterapia Humanista
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-sage-500">✓</span> Certificada en Terapia Cognitivo-Conductual
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-sage-500">✓</span> Cédula Profesional: 12345678
-              </li>
+              <li className="flex items-center gap-2"><span className="text-sage-500">✓</span> Licenciatura en Psicología - UNAM</li>
+              <li className="flex items-center gap-2"><span className="text-sage-500">✓</span> Maestría en Psicoterapia Humanista</li>
+              <li className="flex items-center gap-2"><span className="text-sage-500">✓</span> Certificada en Terapia Cognitivo-Conductual</li>
+              <li className="flex items-center gap-2"><span className="text-sage-500">✓</span> Cédula Profesional: 12345678</li>
             </ul>
           </div>
         </div>
@@ -145,12 +198,17 @@ export default function Home() {
       <section className="py-20 px-4 bg-sage-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">¿Lista/o para dar el primer paso?</h2>
-          <p className="text-sage-100 mb-8 text-lg">
-            La primera consulta es para conocernos. Sin compromiso.
-          </p>
-          <Link href="/agendar" className="inline-block bg-white text-sage-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-cream-100 transition shadow-xl">
-            Agendar primera cita gratuita
-          </Link>
+          <p className="text-sage-100 mb-8 text-lg">La primera consulta es para conocernos. Sin compromiso.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/agendar" className="inline-block bg-white text-sage-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-cream-100 transition shadow-xl">
+              Agendar primera cita gratuita
+            </Link>
+            {showInstall && (
+              <button onClick={handleInstall} className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/10 transition">
+                📲 Descargar App
+              </button>
+            )}
+          </div>
         </div>
       </section>
 
@@ -160,9 +218,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <h3 className="font-semibold mb-4">🌿 Psicóloga</h3>
-              <p className="text-sage-200 text-sm">
-                Consulta psicológica profesional para tu bienestar emocional.
-              </p>
+              <p className="text-sage-200 text-sm">Consulta psicológica profesional para tu bienestar emocional.</p>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Contacto</h3>
