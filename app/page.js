@@ -133,7 +133,7 @@ export default function Home() {
             {/* Psicoterapia Niños */}
             <div className="bg-cream-50 rounded-2xl p-6 hover:shadow-xl transition">
               <div className="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
-                <span className="text-2xl">👶</span>
+                <img src="/icons/ninos.png" alt="Niños" className="w-10 h-10 object-contain" />
               </div>
               <h3 className="text-lg font-semibold text-sage-800 mb-2">Psicoterapia para Niños</h3>
               <p className="text-gray-600 text-sm mb-3">Espacio donde el niño puede expresar sus emociones de manera segura, fortalecer su autoestima y desarrollar herramientas para su estabilidad emocional.</p>
@@ -143,7 +143,7 @@ export default function Home() {
             {/* Psicoterapia Adolescentes */}
             <div className="bg-cream-50 rounded-2xl p-6 hover:shadow-xl transition">
               <div className="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
-                <span className="text-2xl">🧑</span>
+                <img src="/icons/adolescentes.png" alt="Adolescentes" className="w-10 h-10 object-contain" />
               </div>
               <h3 className="text-lg font-semibold text-sage-800 mb-2">Psicoterapia para Adolescentes</h3>
               <p className="text-gray-600 text-sm mb-3">Acompañamiento emocional durante una etapa de cambios profundos, enfocado en identidad, autoestima, manejo de ansiedad y conflictos familiares.</p>
@@ -153,7 +153,7 @@ export default function Home() {
             {/* Psicoterapia Adultos */}
             <div className="bg-cream-50 rounded-2xl p-6 hover:shadow-xl transition">
               <div className="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
-                <span className="text-2xl">👤</span>
+                <img src="/icons/adultos.png" alt="Adultos" className="w-10 h-10 object-contain" />
               </div>
               <h3 className="text-lg font-semibold text-sage-800 mb-2">Psicoterapia para Adultos</h3>
               <p className="text-gray-600 text-sm mb-3">Proceso de autoconocimiento y sanación emocional que permite construir una vida más consciente, equilibrada y coherente con tus valores.</p>
@@ -163,7 +163,7 @@ export default function Home() {
             {/* Meditaciones */}
             <div className="bg-cream-50 rounded-2xl p-6 hover:shadow-xl transition">
               <div className="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
-                <span className="text-2xl">🧘</span>
+                <img src="/icons/meditaciones.png" alt="Meditación" className="w-10 h-10 object-contain" />
               </div>
               <h3 className="text-lg font-semibold text-sage-800 mb-2">Meditaciones Guiadas</h3>
               <p className="text-gray-600 text-sm mb-3">Prácticas de conexión interior que ayudan a calmar la mente, regular el sistema nervioso y recuperar el equilibrio emocional a través de la respiración.</p>
@@ -173,7 +173,7 @@ export default function Home() {
             {/* Talleres */}
             <div className="bg-cream-50 rounded-2xl p-6 hover:shadow-xl transition">
               <div className="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
-                <span className="text-2xl">👥</span>
+                <img src="/icons/talleres.png" alt="Talleres" className="w-10 h-10 object-contain" />
               </div>
               <h3 className="text-lg font-semibold text-sage-800 mb-2">Talleres Terapéuticos</h3>
               <p className="text-gray-600 text-sm mb-3">Espacios grupales de crecimiento personal enfocados en inteligencia emocional, meditación, adicciones, codependencia y autocuidado.</p>
@@ -183,7 +183,7 @@ export default function Home() {
             {/* Retiros */}
             <div className="bg-cream-50 rounded-2xl p-6 hover:shadow-xl transition">
               <div className="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
-                <span className="text-2xl">🏔️</span>
+                <img src="/icons/retiros.png" alt="Retiros" className="w-10 h-10 object-contain" />
               </div>
               <h3 className="text-lg font-semibold text-sage-800 mb-2">Retiros Holísticos</h3>
               <p className="text-gray-600 text-sm mb-3">Experiencias de integración profunda donde la psicoterapia se une con prácticas conscientes para facilitar transformación e introspección.</p>
@@ -193,7 +193,7 @@ export default function Home() {
             {/* Cacao */}
             <div className="bg-cream-50 rounded-2xl p-6 hover:shadow-xl transition">
               <div className="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
-                <span className="text-2xl">🍫</span>
+                <img src="/icons/cacao.png" alt="Cacao" className="w-10 h-10 object-contain" />
               </div>
               <h3 className="text-lg font-semibold text-sage-800 mb-2">Cacao Ceremonial</h3>
               <p className="text-gray-600 text-sm mb-3">Acompañamiento terapéutico en espacios de apertura emocional, sensibilidad, introspección y conexión espiritual.</p>
@@ -203,7 +203,7 @@ export default function Home() {
             {/* Círculos */}
             <div className="bg-cream-50 rounded-2xl p-6 hover:shadow-xl transition">
               <div className="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
-                <span className="text-2xl">⭕</span>
+                <img src="/icons/circulos.png" alt="Círculos" className="w-10 h-10 object-contain" />
               </div>
               <h3 className="text-lg font-semibold text-sage-800 mb-2">Círculos de Palabra</h3>
               <p className="text-gray-600 text-sm mb-3">Espacios de escucha y expresión emocional grupal que fomentan la contención, el respeto y la sanación colectiva.</p>
