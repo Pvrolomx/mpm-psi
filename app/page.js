@@ -321,6 +321,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto text-center">
           <p className="font-semibold mb-2">Psic. Mariela Plácito</p>
           <p className="text-sage-300 text-sm mb-4">Psicoterapia Integral en Español</p>
+          <p className="text-sage-300 mb-3"><a href="https://www.instagram.com/psic.marielapm" target="_blank" className="hover:text-white">📷 @psic.marielapm</a></p>
           <p className="text-sage-400 text-sm">
             📍 Atención presencial: Puerto Vallarta y Bahía de Banderas<br/>
             🌐 Atención en línea: Cualquier parte del mundo
