@@ -132,7 +132,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6">
             {/* Psicoterapia Niños */}
             <div className="bg-cream-50 rounded-2xl p-6 hover:shadow-xl transition">
-              <div className="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
+              <div className="w-24 h-24 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
                 <img src="/icons/ninos.png" alt="Niños" className="w-20 h-20 object-contain" />
               </div>
               <h3 className="text-lg font-semibold text-sage-800 mb-2">Psicoterapia para Niños</h3>
@@ -142,7 +142,7 @@ export default function Home() {
 
             {/* Psicoterapia Adolescentes */}
             <div className="bg-cream-50 rounded-2xl p-6 hover:shadow-xl transition">
-              <div className="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
+              <div className="w-24 h-24 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
                 <img src="/icons/adolescentes.png" alt="Adolescentes" className="w-20 h-20 object-contain" />
               </div>
               <h3 className="text-lg font-semibold text-sage-800 mb-2">Psicoterapia para Adolescentes</h3>
@@ -152,7 +152,7 @@ export default function Home() {
 
             {/* Psicoterapia Adultos */}
             <div className="bg-cream-50 rounded-2xl p-6 hover:shadow-xl transition">
-              <div className="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
+              <div className="w-24 h-24 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
                 <img src="/icons/adultos.png" alt="Adultos" className="w-20 h-20 object-contain" />
               </div>
               <h3 className="text-lg font-semibold text-sage-800 mb-2">Psicoterapia para Adultos</h3>
@@ -162,7 +162,7 @@ export default function Home() {
 
             {/* Meditaciones */}
             <div className="bg-cream-50 rounded-2xl p-6 hover:shadow-xl transition">
-              <div className="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
+              <div className="w-24 h-24 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
                 <img src="/icons/meditaciones.png" alt="Meditación" className="w-20 h-20 object-contain" />
               </div>
               <h3 className="text-lg font-semibold text-sage-800 mb-2">Meditaciones Guiadas</h3>
@@ -172,7 +172,7 @@ export default function Home() {
 
             {/* Talleres */}
             <div className="bg-cream-50 rounded-2xl p-6 hover:shadow-xl transition">
-              <div className="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
+              <div className="w-24 h-24 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
                 <img src="/icons/talleres.png" alt="Talleres" className="w-20 h-20 object-contain" />
               </div>
               <h3 className="text-lg font-semibold text-sage-800 mb-2">Talleres Terapéuticos</h3>
@@ -182,7 +182,7 @@ export default function Home() {
 
             {/* Retiros */}
             <div className="bg-cream-50 rounded-2xl p-6 hover:shadow-xl transition">
-              <div className="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
+              <div className="w-24 h-24 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
                 <img src="/icons/retiros.png" alt="Retiros" className="w-20 h-20 object-contain" />
               </div>
               <h3 className="text-lg font-semibold text-sage-800 mb-2">Retiros Holísticos</h3>
@@ -192,7 +192,7 @@ export default function Home() {
 
             {/* Cacao */}
             <div className="bg-cream-50 rounded-2xl p-6 hover:shadow-xl transition">
-              <div className="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
+              <div className="w-24 h-24 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
                 <img src="/icons/cacao.png" alt="Cacao" className="w-20 h-20 object-contain" />
               </div>
               <h3 className="text-lg font-semibold text-sage-800 mb-2">Cacao Ceremonial</h3>
@@ -202,7 +202,7 @@ export default function Home() {
 
             {/* Círculos */}
             <div className="bg-cream-50 rounded-2xl p-6 hover:shadow-xl transition">
-              <div className="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
+              <div className="w-24 h-24 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
                 <img src="/icons/circulos.png" alt="Círculos" className="w-20 h-20 object-contain" />
               </div>
               <h3 className="text-lg font-semibold text-sage-800 mb-2">Círculos de Palabra</h3>
