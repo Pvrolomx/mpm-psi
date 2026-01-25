@@ -131,7 +131,7 @@ export default function Home() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {/* Psicoterapia Niños */}
-            <a href="https://wa.me/523221118596?text=Hola%20Mariela,%20me%20interesa%20agendar%20Psicoterapia%20para%20Niños" target="_blank" className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition block cursor-pointer">
+            <a href="/agendar?servicio=1" className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition block cursor-pointer">
               <div className="w-full aspect-square bg-sage-100 rounded-2xl flex items-center justify-center mb-4 p-4">
                 <img src="/icons/ninos.png" alt="Niños" className="w-full h-full object-contain" />
               </div>
@@ -141,7 +141,7 @@ export default function Home() {
             </a>
 
             {/* Psicoterapia Adolescentes */}
-            <a href="https://wa.me/523221118596?text=Hola%20Mariela,%20me%20interesa%20agendar%20Psicoterapia%20para%20Adolescentes" target="_blank" className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition block cursor-pointer">
+            <a href="/agendar?servicio=2" className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition block cursor-pointer">
               <div className="w-full aspect-square bg-sage-100 rounded-2xl flex items-center justify-center mb-4 p-4">
                 <img src="/icons/adolescentes.png" alt="Adolescentes" className="w-full h-full object-contain" />
               </div>
@@ -151,7 +151,7 @@ export default function Home() {
             </a>
 
             {/* Psicoterapia Adultos */}
-            <a href="https://wa.me/523221118596?text=Hola%20Mariela,%20me%20interesa%20agendar%20Psicoterapia%20para%20Adultos" target="_blank" className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition block cursor-pointer">
+            <a href="/agendar?servicio=3" className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition block cursor-pointer">
               <div className="w-full aspect-square bg-sage-100 rounded-2xl flex items-center justify-center mb-4 p-4">
                 <img src="/icons/adultos.png" alt="Adultos" className="w-full h-full object-contain" />
               </div>
