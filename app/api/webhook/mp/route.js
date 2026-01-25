@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { supabase, isSupabaseConfigured } from '@/lib/supabase'
+import { supabase, isSupabaseConfigured } from '../../../../lib/supabase'
 
 export async function POST(request) {
   try {
@@ -35,10 +35,6 @@ export async function POST(request) {
             })
             .eq('id', citaId)
         }
-
-        // TODO: Enviar emails con Resend
-        // - Email a cliente confirmando cita
-        // - Email a Mariela notificando nueva cita
       }
     }
 
