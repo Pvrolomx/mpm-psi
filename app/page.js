@@ -211,6 +211,21 @@ export default function Home() {
             </a>
           </div>
 
+          
+          {/* Banner Cursos por WhatsApp */}
+          <div className="mt-12 bg-gradient-to-r from-sage-600 to-sage-700 rounded-2xl p-6 md:p-8 text-white">
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <div className="text-6xl">📱</div>
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-xl md:text-2xl font-bold mb-2">Cursos por WhatsApp</h3>
+                <p className="text-sage-100">Experiencia terapéutica completa con acompañamiento, ejercicios y audios</p>
+              </div>
+              <a href="/cursos-whatsapp" className="bg-white text-sage-700 px-6 py-3 rounded-full font-semibold hover:bg-sage-50 transition whitespace-nowrap">
+                Conocer más →
+              </a>
+            </div>
+          </div>
+
           <div className="text-center mt-12">
             <a href="https://wa.me/523221118596?text=Hola%20Mariela,%20me%20gustaría%20información%20sobre%20tus%20servicios" target="_blank" className="inline-block bg-sage-500 text-white px-8 py-3 rounded-full font-medium hover:bg-sage-600 transition">
               Solicitar información
