@@ -79,6 +79,10 @@ export default function CursosWhatsApp() {
           >
             💬 Inscribirme por WhatsApp
           </a>
+          
+          <Link href="/" className="block w-full text-center py-3 text-sage-600 font-medium hover:text-sage-800 transition mt-4">
+            ← Volver al inicio
+          </Link>
         </div>
       </section>
 
