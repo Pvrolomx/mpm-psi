@@ -334,7 +334,7 @@ export default function Home() {
           </p>
           <p className="text-sage-500 text-xs mt-6">El acompañamiento terapéutico se realiza desde un enfoque ético, profesional y confidencial.</p>
         </div>
-        {process.env.NEXT_PUBLIC_SHOW_FIRMA !== "false" && <p className="text-center text-sage-600 text-xs mt-4">hecho con ❤️ por Duendes 2026</p>}
+        {process.env.NEXT_PUBLIC_SHOW_FIRMA !== "false" && <p className="text-center text-sage-600 text-xs mt-4">Hecho por duendes.app 2026</p>}
       </footer>
     </main>
   )
