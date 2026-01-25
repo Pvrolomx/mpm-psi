@@ -131,75 +131,83 @@ export default function Home() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {/* Psicoterapia Niños */}
-            <div className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition text-center">
+            <div className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition">
               <div className="w-full aspect-square bg-sage-100 rounded-2xl flex items-center justify-center mb-4 p-4">
                 <img src="/icons/ninos.png" alt="Niños" className="w-full h-full object-contain" />
               </div>
-              <h3 className="text-sm md:text-base font-semibold text-sage-800 mb-1">Niños</h3>
-              <p className="text-sage-600 font-bold text-sm">$800</p>
+              <h3 className="text-sm md:text-lg font-semibold text-sage-800 mb-2">Psicoterapia para Niños</h3>
+              <p className="text-gray-600 text-xs md:text-sm mb-3">Espacio donde el niño puede expresar sus emociones de manera segura, fortalecer su autoestima y desarrollar herramientas para su estabilidad emocional.</p>
+              <p className="text-sage-600 font-bold text-sm md:text-base">$800 MXN / sesión</p>
             </div>
 
             {/* Psicoterapia Adolescentes */}
-            <div className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition text-center">
+            <div className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition">
               <div className="w-full aspect-square bg-sage-100 rounded-2xl flex items-center justify-center mb-4 p-4">
                 <img src="/icons/adolescentes.png" alt="Adolescentes" className="w-full h-full object-contain" />
               </div>
-              <h3 className="text-sm md:text-base font-semibold text-sage-800 mb-1">Adolescentes</h3>
-              <p className="text-sage-600 font-bold text-sm">$800</p>
+              <h3 className="text-sm md:text-lg font-semibold text-sage-800 mb-2">Psicoterapia para Adolescentes</h3>
+              <p className="text-gray-600 text-xs md:text-sm mb-3">Acompañamiento emocional durante una etapa de cambios profundos, enfocado en identidad, autoestima, manejo de ansiedad y conflictos familiares.</p>
+              <p className="text-sage-600 font-bold text-sm md:text-base">$800 MXN / sesión</p>
             </div>
 
             {/* Psicoterapia Adultos */}
-            <div className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition text-center">
+            <div className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition">
               <div className="w-full aspect-square bg-sage-100 rounded-2xl flex items-center justify-center mb-4 p-4">
                 <img src="/icons/adultos.png" alt="Adultos" className="w-full h-full object-contain" />
               </div>
-              <h3 className="text-sm md:text-base font-semibold text-sage-800 mb-1">Adultos</h3>
-              <p className="text-sage-600 font-bold text-sm">$800</p>
+              <h3 className="text-sm md:text-lg font-semibold text-sage-800 mb-2">Psicoterapia para Adultos</h3>
+              <p className="text-gray-600 text-xs md:text-sm mb-3">Proceso de autoconocimiento y sanación emocional que permite construir una vida más consciente, equilibrada y coherente con tus valores.</p>
+              <p className="text-sage-600 font-bold text-sm md:text-base">$800 MXN / sesión</p>
             </div>
 
             {/* Meditaciones */}
-            <div className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition text-center">
+            <div className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition">
               <div className="w-full aspect-square bg-sage-100 rounded-2xl flex items-center justify-center mb-4 p-4">
                 <img src="/icons/meditaciones.png" alt="Meditación" className="w-full h-full object-contain" />
               </div>
-              <h3 className="text-sm md:text-base font-semibold text-sage-800 mb-1">Meditación</h3>
-              <p className="text-sage-600 font-bold text-sm">Consultar</p>
+              <h3 className="text-sm md:text-lg font-semibold text-sage-800 mb-2">Meditaciones Guiadas</h3>
+              <p className="text-gray-600 text-xs md:text-sm mb-3">Prácticas de conexión interior que ayudan a calmar la mente, regular el sistema nervioso y recuperar el equilibrio emocional a través de la respiración.</p>
+              <p className="text-sage-600 font-bold text-sm md:text-base">Consultar precio</p>
             </div>
 
             {/* Talleres */}
-            <div className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition text-center">
+            <div className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition">
               <div className="w-full aspect-square bg-sage-100 rounded-2xl flex items-center justify-center mb-4 p-4">
                 <img src="/icons/talleres.png" alt="Talleres" className="w-full h-full object-contain" />
               </div>
-              <h3 className="text-sm md:text-base font-semibold text-sage-800 mb-1">Talleres</h3>
-              <p className="text-sage-600 font-bold text-sm">Consultar</p>
+              <h3 className="text-sm md:text-lg font-semibold text-sage-800 mb-2">Talleres Terapéuticos</h3>
+              <p className="text-gray-600 text-xs md:text-sm mb-3">Espacios grupales de crecimiento personal enfocados en inteligencia emocional, meditación, adicciones, codependencia y autocuidado.</p>
+              <p className="text-sage-600 font-bold text-sm md:text-base">Consultar precio</p>
             </div>
 
             {/* Retiros */}
-            <div className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition text-center">
+            <div className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition">
               <div className="w-full aspect-square bg-sage-100 rounded-2xl flex items-center justify-center mb-4 p-4">
                 <img src="/icons/retiros.png" alt="Retiros" className="w-full h-full object-contain" />
               </div>
-              <h3 className="text-sm md:text-base font-semibold text-sage-800 mb-1">Retiros</h3>
-              <p className="text-sage-600 font-bold text-sm">Consultar</p>
+              <h3 className="text-sm md:text-lg font-semibold text-sage-800 mb-2">Retiros Holísticos</h3>
+              <p className="text-gray-600 text-xs md:text-sm mb-3">Experiencias de integración profunda donde la psicoterapia se une con prácticas conscientes para facilitar transformación e introspección.</p>
+              <p className="text-sage-600 font-bold text-sm md:text-base">Consultar precio</p>
             </div>
 
             {/* Cacao */}
-            <div className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition text-center">
+            <div className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition">
               <div className="w-full aspect-square bg-sage-100 rounded-2xl flex items-center justify-center mb-4 p-4">
                 <img src="/icons/cacao.png" alt="Cacao" className="w-full h-full object-contain" />
               </div>
-              <h3 className="text-sm md:text-base font-semibold text-sage-800 mb-1">Cacao</h3>
-              <p className="text-sage-600 font-bold text-sm">Consultar</p>
+              <h3 className="text-sm md:text-lg font-semibold text-sage-800 mb-2">Cacao Ceremonial</h3>
+              <p className="text-gray-600 text-xs md:text-sm mb-3">Acompañamiento terapéutico en espacios de apertura emocional, sensibilidad, introspección y conexión espiritual.</p>
+              <p className="text-sage-600 font-bold text-sm md:text-base">Consultar precio</p>
             </div>
 
             {/* Círculos */}
-            <div className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition text-center">
+            <div className="bg-cream-50 rounded-2xl p-4 md:p-6 hover:shadow-xl transition">
               <div className="w-full aspect-square bg-sage-100 rounded-2xl flex items-center justify-center mb-4 p-4">
                 <img src="/icons/circulos.png" alt="Círculos" className="w-full h-full object-contain" />
               </div>
-              <h3 className="text-sm md:text-base font-semibold text-sage-800 mb-1">Círculos</h3>
-              <p className="text-sage-600 font-bold text-sm">Consultar</p>
+              <h3 className="text-sm md:text-lg font-semibold text-sage-800 mb-2">Círculos de Palabra</h3>
+              <p className="text-gray-600 text-xs md:text-sm mb-3">Espacios de escucha y expresión emocional grupal que fomentan la contención, el respeto y la sanación colectiva.</p>
+              <p className="text-sage-600 font-bold text-sm md:text-base">Consultar precio</p>
             </div>
           </div>
 
