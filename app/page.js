@@ -65,7 +65,7 @@ export default function Home() {
             <a href="#servicios" className="text-gray-600 hover:text-sage-600 transition">Servicios</a>
             <a href="#sobre-mi" className="text-gray-600 hover:text-sage-600 transition">Sobre mí</a>
             <a href="#beneficios" className="text-gray-600 hover:text-sage-600 transition">Beneficios</a>
-            <Link href="/tienda" className="text-gray-600 hover:text-sage-600 transition">Talleres</Link>
+            <Link href="/cursos-whatsapp" className="text-gray-600 hover:text-sage-600 transition">Cursos WhatsApp</Link>
             <a href="https://wa.me/523221118596" target="_blank" className="bg-sage-500 text-white px-4 py-2 rounded-full hover:bg-sage-600 transition">
               Contactar
             </a>
@@ -209,21 +209,6 @@ export default function Home() {
               <p className="text-gray-600 text-xs md:text-sm mb-3">Espacios de escucha y expresión emocional grupal que fomentan la contención, el respeto y la sanación colectiva.</p>
               <p className="text-sage-600 font-bold text-sm md:text-base">Consultar precio</p>
             </a>
-          </div>
-
-          
-          {/* Banner Cursos por WhatsApp */}
-          <div className="mt-12 bg-gradient-to-r from-sage-600 to-sage-700 rounded-2xl p-6 md:p-8 text-white">
-            <div className="flex flex-col md:flex-row items-center gap-6">
-              <div className="text-6xl">📱</div>
-              <div className="flex-1 text-center md:text-left">
-                <h3 className="text-xl md:text-2xl font-bold mb-2">Cursos por WhatsApp</h3>
-                <p className="text-sage-100">Experiencia terapéutica completa con acompañamiento, ejercicios y audios</p>
-              </div>
-              <a href="/cursos-whatsapp" className="bg-white text-sage-700 px-6 py-3 rounded-full font-semibold hover:bg-sage-50 transition whitespace-nowrap">
-                Conocer más →
-              </a>
-            </div>
           </div>
 
           <div className="text-center mt-12">
