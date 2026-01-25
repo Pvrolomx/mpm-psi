@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
-import { crearPreferencia } from '@/lib/mercadopago'
-import { supabase, isSupabaseConfigured } from '@/lib/supabase'
+import { crearPreferencia } from '../../../lib/mercadopago'
+import { supabase, isSupabaseConfigured } from '../../../lib/supabase'
 
 export async function POST(request) {
   try {
