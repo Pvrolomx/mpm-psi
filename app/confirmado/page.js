@@ -1,5 +1,7 @@
 import Link from 'next/link'
 
+export const dynamic = 'force-dynamic'
+
 export default function ConfirmadoPage({ searchParams }) {
   const citaId = searchParams?.cita || ''
   const isPending = searchParams?.pending === '1'
