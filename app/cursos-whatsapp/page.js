@@ -3,17 +3,17 @@ import Link from 'next/link'
 export default function CursosWhatsApp() {
   const servicios = [
     {
-      icon: '💚',
+      icon: '/icons/acompanamiento.png',
       titulo: 'Acompañamiento emocional',
       descripcion: 'Soporte constante durante tu proceso de sanación y crecimiento personal.',
     },
     {
-      icon: '📝',
+      icon: '/icons/ejercicios.png',
       titulo: 'Ejercicios guiados',
       descripcion: 'Actividades prácticas diseñadas para profundizar en tu autoconocimiento.',
     },
     {
-      icon: '🎧',
+      icon: '/icons/audios.png',
       titulo: 'Audios y seguimiento',
       descripcion: 'Material de audio exclusivo y seguimiento personalizado de tu avance.',
     },
@@ -34,7 +34,9 @@ export default function CursosWhatsApp() {
       {/* Hero */}
       <section className="pt-28 pb-12 px-4 bg-gradient-to-b from-sage-50 to-cream-50">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="text-6xl mb-6">📱</div>
+          <div className="w-32 h-32 mx-auto mb-6">
+            <img src="/icons/cursos-whatsapp.png" alt="Cursos por WhatsApp" className="w-full h-full object-contain" />
+          </div>
           <h1 className="text-3xl md:text-4xl font-bold text-sage-800 mb-4">
             Cursos por WhatsApp
           </h1>
@@ -59,8 +61,8 @@ export default function CursosWhatsApp() {
         <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-6">
           {servicios.map((servicio, i) => (
             <div key={i} className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition">
-              <div className="w-16 h-16 bg-sage-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">{servicio.icon}</span>
+              <div className="w-24 h-24 mx-auto mb-4">
+                <img src={servicio.icon} alt={servicio.titulo} className="w-full h-full object-contain" />
               </div>
               <h3 className="text-lg font-semibold text-sage-700 mb-2">{servicio.titulo}</h3>
               <p className="text-gray-600 text-sm">{servicio.descripcion}</p>
@@ -91,9 +93,6 @@ export default function CursosWhatsApp() {
         <div className="max-w-6xl mx-auto text-center">
           <p className="font-semibold mb-2">Psic. Mariela Plácito</p>
           <p className="text-sage-300 text-sm">Psicoterapia Integral en Español</p>
-          <Link href="/" className="text-sage-400 hover:text-white text-sm mt-4 inline-block">
-            ← Volver al inicio
-          </Link>
         </div>
       </footer>
     </main>
