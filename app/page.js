@@ -94,8 +94,8 @@ export default function Home() {
               🌐 En línea disponible en cualquier parte del mundo
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <a href="/agendar" className="bg-sage-500 text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-sage-600 transition shadow-lg shadow-sage-200 flex items-center justify-center gap-2">
-                📅 Agendar cita
+              <a href="https://wa.me/523221118596?text=Hola%20Mariela,%20me%20gustaría%20agendar%20una%20sesión" target="_blank" className="bg-sage-500 text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-sage-600 transition shadow-lg shadow-sage-200 flex items-center justify-center gap-2">
+                💬 Agendar por WhatsApp
               </a>
               <a href="#servicios" className="border-2 border-sage-300 text-sage-700 px-8 py-3 rounded-full text-lg font-medium hover:bg-sage-50 transition">
                 Ver servicios
@@ -308,8 +308,8 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-4">¿Lista/o para dar el primer paso?</h2>
           <p className="text-sage-100 mb-8 text-lg">Comienza tu proceso de sanación hoy. Primera sesión de valoración.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/agendar" className="inline-flex items-center justify-center gap-2 bg-white text-sage-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-cream-100 transition shadow-xl">
-              📅 Agendar cita
+            <a href="https://wa.me/523221118596?text=Hola%20Mariela,%20me%20gustaría%20agendar%20una%20sesión" target="_blank" className="inline-flex items-center justify-center gap-2 bg-white text-sage-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-cream-100 transition shadow-xl">
+              💬 Agendar por WhatsApp
             </a>
             <a href="https://wa.me/523221118596" target="_blank" className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/10 transition">
               💬 WhatsApp
